@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Protótipo Entrega+ - Smart HAS AI Logistics">
+  <title>Entrega+ | Smart HAS AI Logistics</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span>E+</span><div><b>Entrega+</b><small>Smart HAS AI Logistics</small></div></div>
+    <nav><button class="active" data-view="customer">Experiência do cliente</button><button data-view="operations">Central logística</button></nav>
+    <div class="profile">LF</div>
+  </header>
+
+  <main id="customer" class="view active-view">
+    <section class="shell customer">
+      <div class="intro"><p class="eyebrow">PEDIDO LM-48291 · EM ROTA</p><h1>Sua obra continua.<br><em>A entrega chega no tempo certo.</em></h1><p class="lead">A IA combina trânsito, clima, capacidade e histórico para prever a chegada e avisar antes de qualquer mudança.</p><article class="eta"><div><small>PREVISÃO INTELIGENTE</small><strong>Hoje, 14:10-15:00</strong><span>94% de confiança · atualizado há 2 min</span></div><b>94<small>%</small></b></article></div>
+      <article class="map"><div class="roads"></div><div class="route"></div><i class="pin origin"></i><i class="pin destination"></i><span class="truck">🚚</span><label class="from">Loja Morumbi</label><label class="to">Sua casa</label><div class="driver"><span>RS</span><div><small>SEU MOTORISTA</small><b>Roberto Santos</b><em>★ 4,9 · veículo 28A</em></div><button data-action="message">Mensagem</button></div></article>
+      <article class="panel tracking"><header><div><p class="eyebrow">ACOMPANHAMENTO</p><h2>Cada etapa, sem incerteza</h2></div><button data-action="advance">Simular avanço</button></header><div class="progress"><i></i></div><div class="stages"></div></article>
+      <article class="panel scheduling"><div><p class="eyebrow">ENTREGA QUE SE ADAPTA</p><h2>Qual horário funciona melhor?</h2><p>A IA reorganiza a rota preservando eficiência e prazo.</p></div><div class="slots"><button class="selected" data-slot="14:00-16:00"><b>14:00-16:00</b><small>Recomendado · menor CO₂</small></button><button data-slot="16:00-18:00"><b>16:00-18:00</b><small>Disponível</small></button><button data-slot="18:00-20:00"><b>18:00-20:00</b><small>Disponível</small></button><button class="confirm" data-action="confirm">Confirmar →</button></div></article>
+    </section>
+  </main>
+
+  <main id="operations" class="view">
+    <section class="shell operations"><header class="opsHero"><div><p class="eyebrow">CENTRAL LOGÍSTICA · TEMPO REAL</p><h1>Decisões antes do atraso.</h1><p>A IA prioriza exceções, recomenda ações e aprende com cada entrega.</p></div><button data-action="optimize">Otimizar rotas</button></header>
+      <div class="metrics"><article><small>ENTREGAS HOJE</small><b>1.248</b><span>↑ 8,4% vs. média</span></article><article><small>NO PRAZO</small><b>96,2%</b><span>+3,1 p.p. com IA</span></article><article><small>KM EVITADOS</small><b>684</b><span>-12% de rota</span></article><article><small>RISCO ALTO</small><b>7</b><span class="alert">Ação recomendada</span></article></div>
+      <div class="opsGrid"><article class="panel queue"><header><div><p class="eyebrow">FILA INTELIGENTE</p><h2>Entregas priorizadas por risco</h2></div><small>Dados simulados do MVP</small></header><div id="delivery-list"></div></article><aside class="panel copilot"><p class="eyebrow">COPILOTO LOGÍSTICO</p><h2>Risco detectado na rota 28A</h2><p>Congestionamento previsto na Marginal Pinheiros pode adicionar 26 minutos.</p><div><small>AÇÃO RECOMENDADA</small><b>Antecipar saída em 18 min</b><span>11 pedidos preservados no prazo</span></div><button data-action="apply">Aplicar recomendação</button></aside></div>
+      <p class="disclaimer">Métricas e pedidos simulados para demonstração acadêmica. Não representam resultados reais da Leroy Merlin.</p>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
