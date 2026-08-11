@@ -1,5 +1,8 @@
-RM556647 - LUCAS FEN AVELINO
+rm556647 - LUCAS FEN AVELINO
 
+https://github.com/LucasFen101/Enterprise-Challenge
+
+https://youtu.be/tGv6vm49Eew
 
 
 Este pacote não precisa de Node.js, npm ou banco de dados.
